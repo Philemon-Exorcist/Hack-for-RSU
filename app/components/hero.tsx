@@ -97,7 +97,7 @@ export function Hero() {
           </nav>
 
           <div className="flex flex-1 flex-col items-center justify-center gap-6 pb-10 pt-8 text-center sm:gap-7 sm:pb-14 sm:pt-10 lg:pb-12 lg:pt-4">
-            <div className="w-full max-w-4xl">
+            <div className="mt-10 w-full max-w-4xl">
               <p className="mb-4 mt-5 inline-flex max-w-full items-center gap-2 rounded-full border border-black/10 bg-white/75 px-3 py-1.5 text-[0.64rem] font-semibold text-[#555d5f] shadow-sm backdrop-blur-md sm:mt-5 sm:text-[0.66rem]">
                 <span className="h-2 w-2 rounded-full bg-black" />
                 <span className="truncate">
