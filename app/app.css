@@ -14,6 +14,14 @@ body {
   }
 }
 
+.hero-title-mark {
+  display: block;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  letter-spacing: -0.02em;
+  line-height: 0.88;
+}
+
 .hero-gradient-bg {
   background:
     radial-gradient(circle at 13% 92%, rgba(12, 190, 126, 0.7), transparent 32%),

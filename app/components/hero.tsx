@@ -42,7 +42,9 @@ export function Hero() {
               </p>
 
               <h1 className="mx-auto max-w-[760px] text-[clamp(2.2rem,4.7vw,4.1rem)] font-black leading-[0.98] tracking-normal text-white drop-shadow-[0_8px_20px_rgba(0,0,0,0.38)]">
-                Hack For RSU 1.0
+                <span className="hero-title-mark">
+                  HACK FOR RSU <span className="text-[#18f47a]">1.0</span>
+                </span>
                 <span className="block">
                   <span className="ml-2 text-[#18f47a]">*</span>
                   Build The Next Campus Breakthrough
