@@ -1,7 +1,9 @@
 import type { Route } from "./+types/home";
+import { BackingTheMovement } from "../components/backing-the-movement";
 import { Hero } from "../components/hero";
 import { HowItWorks } from "../components/how-it-works";
 import { MoreThanHackathon } from "../components/more-than-hackathon";
+import { Sponsorship } from "../components/sponsorship";
 import { TheChallenge } from "../components/the-challenge";
 
 export function meta({}: Route.MetaArgs) {
@@ -22,6 +24,8 @@ export default function Home() {
       <MoreThanHackathon />
       <TheChallenge />
       <HowItWorks />
+      <Sponsorship />
+      <BackingTheMovement />
     </>
   );
 }

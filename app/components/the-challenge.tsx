@@ -81,7 +81,7 @@ export function TheChallenge() {
               <a
                 key={track.number}
                 href={`#challenge-${track.number}`}
-                className={`challenge-module group relative isolate flex min-h-44 overflow-hidden border border-black/10 bg-white/72 p-5 transition duration-300 hover:border-[#20b957] hover:bg-white sm:min-h-48 ${track.className}`}
+                className={`challenge-module challenge-module-${track.number} group relative isolate flex min-h-44 overflow-hidden border border-black/10 bg-white/72 p-5 transition duration-300 hover:border-[#20b957] hover:bg-white sm:min-h-48 ${track.className}`}
               >
                 <div className="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-[#20b957] transition duration-300 group-hover:scale-x-100" />
                 <div className="absolute right-4 top-4 h-9 w-9 rotate-45 border border-black/10 bg-[#20b957]/0 transition duration-300 group-hover:border-[#20b957]/50 group-hover:bg-[#20b957]/10" />
