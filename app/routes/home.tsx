@@ -1,6 +1,8 @@
 import type { Route } from "./+types/home";
 import { Hero } from "../components/hero";
+import { HowItWorks } from "../components/how-it-works";
 import { MoreThanHackathon } from "../components/more-than-hackathon";
+import { TheChallenge } from "../components/the-challenge";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -18,6 +20,8 @@ export default function Home() {
     <>
       <Hero />
       <MoreThanHackathon />
+      <TheChallenge />
+      <HowItWorks />
     </>
   );
 }

@@ -105,7 +105,7 @@ export function Hero() {
                 </span>
               </p>
 
-              <h1 className="mx-auto flex max-w-[1080px] flex-col items-center text-center text-[clamp(3.65rem,18vw,5.7rem)] font-black leading-[0.84] tracking-normal text-[#090b0c] sm:text-[clamp(4.4rem,9.8vw,7.4rem)] sm:leading-[0.9] lg:text-[clamp(5.4rem,8.8vw,8.6rem)]">
+              <h1 className="mx-auto flex max-w-[1080px] flex-col items-center text-center text-[clamp(3.025rem,18vw,5.075rem)] font-black leading-[0.84] tracking-normal text-[#090b0c] sm:text-[clamp(3.775rem,9.8vw,6.775rem)] sm:leading-[0.9] lg:text-[clamp(4.775rem,8.8vw,7.975rem)]">
                 <span className="hidden sm:block">
                   HACK FOR RSU <span className="text-[#20b957]">1.0</span>
                 </span>
