@@ -7,6 +7,7 @@ const themeStorageKey = "rsu-theme";
 
 export function Hero() {
   const [isDark, setIsDark] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const savedTheme = window.localStorage.getItem(themeStorageKey);
@@ -39,8 +40,8 @@ export function Hero() {
         <div className="hero-side-art hero-side-art-left" aria-hidden="true" />
         <div className="hero-side-art hero-side-art-right" aria-hidden="true" />
 
-        <div className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-7xl flex-col px-4 py-4 sm:px-8 sm:py-5 lg:px-14 xl:px-16">
-          <nav className="flex items-center justify-between gap-3 text-[0.62rem] font-semibold text-[#111516] sm:gap-5">
+        <div className="relative z-10 mx-auto flex min-h-[100svh] w-full max-w-[92rem] flex-col px-3 py-3 sm:px-6 sm:py-4 lg:px-10 xl:px-12">
+          <nav className="relative flex items-center justify-between gap-3 text-[0.62rem] font-semibold text-[#111516] sm:gap-5">
             <a href="/" className="shrink-0 text-sm font-black tracking-tight sm:text-base">
               Hack for RSU
             </a>
@@ -68,19 +69,43 @@ export function Hero() {
               >
                 Register
               </a>
+              <button
+                type="button"
+                aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+                aria-expanded={isMenuOpen}
+                onClick={() => setIsMenuOpen((current) => !current)}
+                className="hero-menu-button grid h-8 w-8 place-items-center rounded-full border border-black/15 text-base leading-none md:hidden"
+              >
+                <span aria-hidden="true">{isMenuOpen ? "×" : "☰"}</span>
+              </button>
             </div>
+
+            {isMenuOpen && (
+              <div className="hero-mobile-menu absolute right-0 top-full z-20 mt-3 flex w-44 flex-col gap-1 rounded-2xl border border-black/10 bg-white/95 p-2 text-right shadow-lg backdrop-blur-md md:hidden">
+                {navItems.map((item) => (
+                  <a
+                    key={item}
+                    href={`#${item.toLowerCase().replaceAll(" ", "-")}`}
+                    onClick={() => setIsMenuOpen(false)}
+                    className="rounded-xl px-3 py-2.5 transition hover:bg-black/5"
+                  >
+                    {item}
+                  </a>
+                ))}
+              </div>
+            )}
           </nav>
 
-          <div className="flex flex-1 flex-col items-center justify-center gap-8 pb-14 pt-10 text-center sm:pb-20 sm:pt-12 lg:pt-6">
-            <div className="w-full max-w-3xl">
-              <p className="mb-4 mt-4 inline-flex max-w-full items-center gap-2 rounded-full border border-black/10 bg-white/75 px-3 py-1.5 text-[0.58rem] font-semibold text-[#555d5f] shadow-sm backdrop-blur-md sm:mt-6 sm:text-[0.6rem]">
+          <div className="flex flex-1 flex-col items-center justify-center gap-6 pb-10 pt-8 text-center sm:gap-7 sm:pb-14 sm:pt-10 lg:pb-12 lg:pt-4">
+            <div className="w-full max-w-4xl">
+              <p className="mb-4 mt-5 inline-flex max-w-full items-center gap-2 rounded-full border border-black/10 bg-white/75 px-3 py-1.5 text-[0.64rem] font-semibold text-[#555d5f] shadow-sm backdrop-blur-md sm:mt-5 sm:text-[0.66rem]">
                 <span className="h-2 w-2 rounded-full bg-black" />
                 <span className="truncate">
                   Rivers State University innovation challenge
                 </span>
               </p>
 
-              <h1 className="mx-auto flex max-w-[900px] flex-col items-center text-center text-[clamp(3rem,12vw,3.2rem)] font-black leading-[0.88] tracking-normal text-[#090b0c] sm:leading-[0.94]">
+              <h1 className="mx-auto flex max-w-[1080px] flex-col items-center text-center text-[clamp(3.65rem,18vw,5.7rem)] font-black leading-[0.84] tracking-normal text-[#090b0c] sm:text-[clamp(4.4rem,9.8vw,7.4rem)] sm:leading-[0.9] lg:text-[clamp(5.4rem,8.8vw,8.6rem)]">
                 <span className="hidden sm:block">
                   HACK FOR RSU <span className="text-[#20b957]">1.0</span>
                 </span>
@@ -92,22 +117,22 @@ export function Hero() {
                 </span>
               </h1>
 
-              <p className="mx-auto mt-5 max-w-2xl px-1 text-sm font-medium leading-6 text-[#626a6d] sm:px-0 sm:text-sm md:text-base md:leading-7">
+              <p className="mx-auto mt-5 max-w-3xl px-1 text-base font-medium leading-7 text-[#626a6d] sm:px-0 md:text-lg md:leading-8">
                 Build The Next Campus Breakthrough, turn bold ideas into
                 working products with students, mentors and industry partners
                 solving real challenges for Rivers State University.
               </p>
 
-              <div className="mx-auto mt-7 flex w-full max-w-sm flex-col items-stretch justify-center gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:items-center">
+              <div className="mx-auto mt-6 flex w-full max-w-md flex-col items-stretch justify-center gap-3 sm:max-w-none sm:flex-row sm:flex-wrap sm:items-center">
                 <a
                   href="#join"
-                  className="rounded-full bg-black px-5 py-3 text-center text-xs font-bold text-white shadow-[0_10px_24px_rgba(0,0,0,0.18)] transition hover:-translate-y-0.5 hover:bg-[#222]"
+                  className="rounded-full bg-black px-6 py-3.5 text-center text-sm font-bold text-white shadow-[0_10px_24px_rgba(0,0,0,0.18)] transition hover:-translate-y-0.5 hover:bg-[#222] sm:text-xs"
                 >
                   Register Now
                 </a>
                 <a
                   href="#sponsors"
-                  className="rounded-full border border-black/15 bg-white/65 px-5 py-3 text-center text-xs font-bold text-[#111516] shadow-sm backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-black hover:text-black"
+                  className="rounded-full border border-black/15 bg-white/65 px-6 py-3.5 text-center text-sm font-bold text-[#111516] shadow-sm backdrop-blur-sm transition hover:-translate-y-0.5 hover:border-black hover:text-black sm:text-xs"
                 >
                   Sponsor Teams
                 </a>

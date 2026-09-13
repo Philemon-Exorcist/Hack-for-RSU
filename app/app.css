@@ -106,6 +106,21 @@ body {
   background: transparent;
 }
 
+.hero-dark .hero-menu-button {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.hero-dark .hero-mobile-menu {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(10, 10, 10, 0.96);
+  color: #fff;
+}
+
+.hero-dark .hero-mobile-menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .hero-dark a[href="#join"] {
   background: #fff;
   color: #000;

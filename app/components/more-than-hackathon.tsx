@@ -32,7 +32,7 @@ const experiencePoints = [
 
 export function MoreThanHackathon() {
   return (
-    <section className="section-idea relative overflow-hidden bg-[#fbfaf4] px-5 py-24 text-[#121715] sm:px-8 lg:px-14 lg:py-32 xl:px-16">
+    <section className="section-idea relative overflow-hidden bg-[#fbfaf4] px-4 py-16 text-[#121715] sm:px-6 sm:py-20 lg:px-10 lg:py-24 xl:px-12">
       <div className="section-idea-grid pointer-events-none absolute inset-0" />
       <div className="absolute -left-24 top-20 h-72 w-72 rounded-full bg-[#20b957]/10 blur-3xl" />
       <div className="absolute -right-24 bottom-16 h-80 w-80 rounded-full bg-[#e5b932]/14 blur-3xl" />
@@ -117,7 +117,7 @@ export function MoreThanHackathon() {
           </div>
         </div>
 
-        <div className="mt-20 border-y border-[#143f28]/14">
+        <div className="mt-14 border-y border-[#143f28]/14 lg:mt-16">
           <div className="grid lg:grid-cols-4">
             {experiencePoints.map((point) => (
               <a
