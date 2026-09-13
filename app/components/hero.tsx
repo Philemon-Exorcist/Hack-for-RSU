@@ -81,8 +81,15 @@ export function Hero() {
               </p>
 
               <h1 className="mx-auto flex max-w-[900px] flex-col items-center text-center text-[clamp(3rem,12vw,3.2rem)] font-black leading-[0.88] tracking-normal text-[#090b0c] sm:leading-[0.94]">
-                <span className="block">HACK FOR RSU</span>
-                <span className="block text-[#20b957]">1.0</span>
+                <span className="hidden sm:block">
+                  HACK FOR RSU <span className="text-[#20b957]">1.0</span>
+                </span>
+                <span className="block sm:hidden">
+                  HACK FOR
+                  <span className="block">
+                    RSU <span className="text-[#20b957]">1.0</span>
+                  </span>
+                </span>
               </h1>
 
               <p className="mx-auto mt-5 max-w-2xl px-1 text-sm font-medium leading-6 text-[#626a6d] sm:px-0 sm:text-sm md:text-base md:leading-7">
