@@ -16,16 +16,11 @@ const journeySteps = [
   },
   {
     number: "04",
-    title: "Mentor",
-    text: "Get guidance from experienced builders and industry experts.",
-  },
-  {
-    number: "05",
     title: "Pitch",
     text: "Present your solution to the judges.",
   },
   {
-    number: "06",
+    number: "05",
     title: "Win",
     text: "Earn recognition, opportunities and prizes.",
   },
@@ -57,7 +52,7 @@ export function HowItWorks() {
           <div className="journey-line absolute bg-black/10" />
           <div className="journey-line-active absolute bg-[#20b957]" />
 
-          <div className="grid gap-5 md:grid-cols-6 md:gap-3">
+          <div className="grid gap-5 md:grid-cols-5 md:gap-3">
             {journeySteps.map((step, index) => (
               <div
                 key={step.number}
