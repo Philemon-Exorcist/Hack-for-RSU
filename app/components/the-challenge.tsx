@@ -56,7 +56,7 @@ export function TheChallenge() {
               The Challenge
             </p>
 
-            <h2 className="text-[clamp(2.65rem,6.4vw,5.4rem)] font-black uppercase leading-[0.9] tracking-normal text-[#090b0c]">
+            <h2 className="tmax-w-[480px] text-[clamp(2.6rem,5.4vw,3.15rem)] font-black uppercase leading-[0.9] tracking-normal text-[#090b0c]">
               Real Problems.
               <span className="block text-[#20b957]">Real Builders.</span>
             </h2>
@@ -66,14 +66,6 @@ export function TheChallenge() {
               team and build something that can make a difference.
             </p>
 
-            <div className="mt-8 flex items-center gap-4 border-l-2 border-[#20b957] pl-4">
-              <span className="text-4xl font-black leading-none text-black/15">
-                06
-              </span>
-              <span className="max-w-[12rem] text-xs font-black uppercase leading-5 tracking-[0.16em] text-[#090b0c]">
-                curated tracks for practical innovation
-              </span>
-            </div>
           </div>
 
           <div className="challenge-board grid auto-rows-[minmax(11rem,auto)] gap-3 sm:grid-cols-2 lg:grid-cols-12">

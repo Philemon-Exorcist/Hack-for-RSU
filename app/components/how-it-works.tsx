@@ -34,10 +34,10 @@ export function HowItWorks() {
       <div className="relative z-10 mx-auto max-w-[92rem]">
         <div className="mb-10 grid gap-5 border-b border-black/10 pb-7 lg:grid-cols-[0.8fr_1fr] lg:items-end">
           <div>
-            <p className="mb-4 text-[0.66rem] font-black uppercase tracking-[0.24em] text-[#20b957]">
+            <p className="flex mb-4 text-[0.66rem] font-black uppercase tracking-[0.24em] text-[#20b957]">
               How It Works
             </p>
-            <h2 className="text-[clamp(2.35rem,5vw,4.4rem)] font-black uppercase leading-[0.9] tracking-normal">
+            <h2 className="max-w-[480px] text-[clamp(2.6rem,5.4vw,3.15rem)] font-black uppercase leading-[0.9] tracking-normal text-[#090b0c]">
               From Idea
               <span className="block text-[#20b957]">To Impact.</span>
             </h2>
