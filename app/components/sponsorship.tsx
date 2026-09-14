@@ -108,6 +108,13 @@ export function Sponsorship() {
               key={benefit.title}
               className="sponsor-benefit border-black/10 py-6 lg:border-r lg:px-6"
             >
+              {benefit.title === "Talent" ? (
+                <img
+                  src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80"
+                  alt="Builders collaborating around a table"
+                  className="mb-5 aspect-[16/9] w-full object-cover grayscale-[20%]"
+                />
+              ) : null}
               <p className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-[#20b957]">
                 {benefit.title}
               </p>

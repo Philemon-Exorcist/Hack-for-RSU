@@ -39,7 +39,7 @@ const challengeTracks = [
     name: "Sustainability",
     shortName: "ECO",
     description: "Build solutions for energy, waste, climate and resilient communities.",
-    className: "lg:col-span-5",
+    className: "lg:col-span-5 lg:min-h-full",
   },
 ];
 
